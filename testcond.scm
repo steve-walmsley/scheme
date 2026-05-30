@@ -1,0 +1,17 @@
+( define classify 
+  ( lambda ( x ) 
+    ( cond
+      ( ( integer?  x ) "integer"  )
+      ( ( rational? x ) "rational" )
+      ( ( real?     x ) "real"     )
+      ( ( complex?  x ) "complex"  )
+      ( ( number?   x ) "number"   )
+      ( else            "non-numeric" )
+    )
+  ) 
+)
+( classify    0 )
+( classify    1 )
+( classify  0.1 )
+( classify   -1 )
+( classify -1.1 )

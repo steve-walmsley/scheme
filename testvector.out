@@ -1,0 +1,29 @@
+< schemeinterpreter testvector.scm >
+#()
+#(#f)
+#(#f #f)
+#(#f #f #f)
+#("aardvaark")
+#("badger" "badger")
+#("camel" "camel" "camel")
+#t
+0
+1
+2
+3
+#("dingo" "elephant" "fox")
+"hyena"
+#(alpher bethe chadwick)
+( dirac einstein fermi )
+#(gamow heisenberg itzykson)
+#("jahn" "jahn" "jahn")
+#(1 2 3)
+#("khariton" "landau" "minkowski")
+#("noether" #("ornstein" "pauli") "rutherford")
+#("schrödinger" tsiolkovsky ( "uhlenbeck" "voigt" ) 1 2.3 #t)
+#(0 ( 2 2 2 2 ) "Anna")
+8
+#(0 ( "Sue" "Sue" ) "Anna")
+( dah dah didah )
+#(dididit dah)
+< leaving schemeinterpreter >

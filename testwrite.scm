@@ -1,0 +1,2 @@
+( write "Hello " )
+( write "World " )

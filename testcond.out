@@ -1,0 +1,8 @@
+< schemeinterpreter testcond.scm >
+classify
+"integer"
+"integer"
+"real"
+"integer"
+"real"
+< leaving schemeinterpreter >

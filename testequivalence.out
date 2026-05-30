@@ -1,0 +1,78 @@
+< schemeinterpreter testequivalence.scm >
+"test eq?"
+#t
+#f
+#f
+#f
+#f
+#t
+#f
+#t
+#t
+#t
+#t
+#t
+"test eqv? with equivalent objects"
+#t
+#t
+#t
+#t
+#t
+#t
+#t
+#t
+#t
+"test eqv? with non-equivalent objects"
+#f
+#f
+#f
+#f
+#f
+#f
+#f
+#f
+#f
+#f
+"eqv? examples with specified results"
+#t
+#f
+#t
+#t
+#t
+#f
+#f
+#f
+#t
+"eqv? examples with unspecified results"
+#f
+#f
+#f
+"eqv? procedures with local state"
+gen-counter
+#t
+#f
+gen-loser
+#t
+#f
+#f
+#f
+"eqv? constant objects"
+#f
+#f
+#f
+#t
+"test equal?"
+"(equal? 'a 'a)"
+#t
+"(equal? '(a) '(a))"
+#t
+"(equal? '(a (b) c) '(a (b) c))"
+#t
+"(equal? "abc" "abc")"
+#t
+"(equal? 2 2)"
+#t
+#t
+"(equal? (lambda (x) x) (lambda (y) y))"
+#f
+< leaving schemeinterpreter >

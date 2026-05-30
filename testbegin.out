@@ -1,0 +1,6 @@
+< schemeinterpreter testbegin.scm >
+x
+6
+4 plus 1 equals 5
+()
+< leaving schemeinterpreter >

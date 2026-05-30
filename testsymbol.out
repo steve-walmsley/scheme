@@ -1,0 +1,10 @@
+< schemeinterpreter testsymbol.scm >
+#t
+#t
+#f
+#t
+#f
+#f
+#t
+( aardvaark badger camel )
+< leaving schemeinterpreter >

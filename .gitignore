@@ -1,0 +1,12 @@
+\#*
+*~
+*.class
+.DS_Store
+.ipynb_checkpoints
+documents/
+original/
+pregit/
+version1/
+version2/
+version3/
+binary/

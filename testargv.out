@@ -1,0 +1,3 @@
+< schemeinterpreter testargv.scm >
+( "testargv.scm" "aardvaark" "badger" "camel" "dingo" )
+< leaving schemeinterpreter >

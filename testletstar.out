@@ -1,0 +1,14 @@
+< schemeinterpreter testletstar.scm >
+6
+70
+"aardvaark"
+()
+( "aardvaark" "badger" "badger" )
+let-star-proc
+a aardvaark
+c aardvaark
+
+a aardvaark
+c aardvaark
+
+< leaving schemeinterpreter >

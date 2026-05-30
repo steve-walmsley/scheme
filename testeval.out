@@ -1,0 +1,19 @@
+< schemeinterpreter testeval.scm >
+<ENVIRONMENT>
+<ENVIRONMENT>
+<ENVIRONMENT>
+21
+
+scheme.unboundvariableexception: schemeenvironment.lookupVariable undefined variable *
+> ( eval ( quote ( * 7 3 ) ) ( null-environment 5 ) )
+
+20
+dingo
+123
+
+scheme.unboundvariableexception: schemeenvironment.lookupVariable undefined variable dingo
+> ( eval ( quote dingo ) ( scheme-report-environment 5 ) )
+
+123
+123
+< leaving schemeinterpreter >

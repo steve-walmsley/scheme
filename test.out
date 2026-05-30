@@ -1,0 +1,45 @@
+< schemeinterpreter test.scm >
+"abc"
+123
+123.456
+-321
+-654.321
+abc
+123
+abc
+789
+
+scheme.unboundvariableexception: schemeenvironment.lookupVariable undefined variable def
+> def
+
+
+scheme.unboundvariableexception: schemeenvironment.setVariableValue undefined variable def
+> ( set! def 789 )
+
+()
+abc
+"abc"
+123
+123.456
+( abc "abc" 123 123.456 )
+( abc ( "abc" 123 ) 123.456 )
+p
+<PROCEDURE
+( lambda ( p1 p2 ) s1 s2 s3 )
+<ENVIRONMENT>
+>
+
+p1
+p2
+p3
+
+scheme.unboundvariableexception: schemeenvironment.lookupVariable undefined variable aardvaark
+> ( aardvaark p1 p2 p3 -123 "def" )
+
+< PRIMITIVE car >
+< PRIMITIVE cdr >
+"aardvark"
+( "badger" "camel" )
+( "dingo" . "elephant" )
+( "fox" "giraffe" "hyena" "iguana" )
+< leaving schemeinterpreter >

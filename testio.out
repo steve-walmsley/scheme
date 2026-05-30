@@ -1,0 +1,4 @@
+< schemeinterpreter testio.scm >
+"abc"
+"def"
+< leaving schemeinterpreter >

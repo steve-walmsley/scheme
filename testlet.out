@@ -1,0 +1,10 @@
+< schemeinterpreter testlet.scm >
+6
+35
+"aardvaark"
+()
+
+scheme.unboundvariableexception: schemeenvironment.lookupVariable undefined variable b
+> ( let ( ( a "aardvaark" ) ( b "badger" ) ( c b ) ) ( list a b c ) )
+
+< leaving schemeinterpreter >

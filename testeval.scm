@@ -1,0 +1,20 @@
+( interaction-environment )
+( scheme-report-environment 5 )
+( null-environment 5 )
+
+( eval '( * 7 3 ) ( scheme-report-environment 5 ) )
+( eval '( * 7 3 ) ( null-environment 5 ) )
+( let (
+    ( f
+      ( eval '( lambda ( f x ) ( f x x ) ) 
+      ( null-environment 5 )
+      )
+    )
+  )
+  (f + 10 )
+)
+( define dingo 123 )
+( eval 'dingo ( interaction-environment 5 ) )
+( eval 'dingo ( scheme-report-environment 5 ) )
+( eval 'dingo )
+( eval ( string->symbol "dingo" ) )

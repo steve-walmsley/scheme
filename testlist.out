@@ -1,0 +1,125 @@
+< schemeinterpreter testlist.scm >
+#t
+#t
+#f
+#f
+#f
+#f
+#f
+#t
+#f
+#f
+#f
+#t
+#t
+#f
+#f
+3
+3
+0
+
+scheme.schemelistexception: length : argument is not a list
+> ( length "not a list" )
+
+( c b a )
+( ( c d e ) ( b ) a )
+()
+
+scheme.schemelistexception: reverse : argument is not a list
+> ( reverse "not a list" )
+
+( a b c )
+( b c )
+( c )
+()
+
+scheme.schemelistexception: list-tail : index 4 is out of range
+> ( list-tail ( quote ( a b c ) ) 4 )
+
+( a ( b ) ( c d e ) )
+( ( b ) ( c d e ) )
+( ( c d e ) )
+()
+
+scheme.schemelistexception: list-tail : index 4 is out of range
+> ( list-tail ( quote ( a ( b ) ( c d e ) ) ) 4 )
+
+
+scheme.schemelistexception: list-tail : argument 1 is not a list
+> ( list-tail ( quote ( a b . c ) ) 0 )
+
+
+scheme.schemelistexception: list-tail : argument 1 is not a list
+> ( list-tail ( quote ( a b . c ) ) 1 )
+
+
+scheme.schemelistexception: list-tail : argument 1 is not a list
+> ( list-tail ( quote ( a b . c ) ) 2 )
+
+
+scheme.schemelistexception: list-tail : argument 1 is not a list
+> ( list-tail ( quote ( a b . c ) ) 3 )
+
+()
+
+scheme.schemelistexception: list-tail : index 1 is out of range
+> ( list-tail ( quote () ) 1 )
+
+
+scheme.schemelistexception: list-tail : argument 1 is not a list
+> ( list-tail "not a list" "not an integer" )
+
+
+scheme.schemelistexception: list-tail : argument 2 is not an integer
+> ( list-tail ( quote ( a b c ) ) "not an integer" )
+
+a
+b
+c
+
+scheme.schemelistexception: list-ref : index 3 is out of range
+> ( list-ref ( quote ( a b c ) ) 3 )
+
+a
+( b )
+( c d e )
+
+scheme.schemelistexception: list-ref : index 3 is out of range
+> ( list-ref ( quote ( a ( b ) ( c d e ) ) ) 3 )
+
+a
+b
+c
+
+scheme.schemelistexception: list-ref : index 3 is out of range
+> ( list-ref ( quote ( a b . c ) ) 3 )
+
+
+scheme.schemelistexception: list-ref : argument 1 is not a list
+> ( list-ref "not a list" "not an integer" )
+
+
+scheme.schemelistexception: list-ref : argument 2 is not an integer
+> ( list-ref ( quote ( a b c ) ) "not an integer" )
+
+
+scheme.schemelistexception: list-ref : argument 1 is not a list
+> ( list-ref ( quote () ) 0 )
+
+( x y )
+( a b c d )
+( a ( b ) ( c ) )
+( a b c . d )
+a
+( a b c )
+( a b c )
+( a b c d e f g h i )
+( a b )
+( a b c )
+
+scheme.schemelistexception: append : argument 1 is not a list
+> ( append "abc" )
+
+( 1 b c )
+( a . 1 )
+< leaving schemeinterpreter >

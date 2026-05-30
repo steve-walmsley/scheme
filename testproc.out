@@ -1,0 +1,98 @@
+< schemeinterpreter testproc.scm >
+proctwoarg
+<PROCEDURE
+( lambda ( p1 p2 ) ( list p2 p1 ) )
+<ENVIRONMENT>
+>
+
+( "badger" "aardvark" )
+
+scheme.schemelistexception: environmentframe.<init> too many values
+> ( proctwoarg "aardvark" "badger" "camel" )
+
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( proctwoarg "aardvark" )
+
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( proctwoarg )
+
+
+
+procsingle
+<PROCEDURE
+( lambda plist plist )
+<ENVIRONMENT>
+>
+
+( "aardvark" "badger" "camel" "dingo" )
+()
+
+
+procvariable
+<PROCEDURE
+( lambda ( p1 p2 . opt ) ( list ( list "p1" p1 ) ( list "p2" p2 ) ( list "opt" opt ) ) )
+<ENVIRONMENT>
+>
+
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" ( "camel" "dingo" ) ) )
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" ( "camel" ) ) )
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" () ) )
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( procvariable "aardvark" )
+
+
+
+proctwoargalt
+<PROCEDURE
+( lambda ( p1 p2 ) ( list p2 p1 ) )
+<ENVIRONMENT>
+>
+
+( "badger" "aardvark" )
+
+scheme.schemelistexception: environmentframe.<init> too many values
+> ( proctwoargalt "aardvark" "badger" "camel" )
+
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( proctwoargalt "aardvark" )
+
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( proctwoargalt )
+
+
+
+procsinglealt
+<PROCEDURE
+( lambda plist plist )
+<ENVIRONMENT>
+>
+
+( "aardvark" "badger" "camel" "dingo" )
+()
+
+
+procvariablealt
+<PROCEDURE
+( lambda ( p1 p2 . opt ) ( list ( list "p1" p1 ) ( list "p2" p2 ) ( list "opt" opt ) ) )
+<ENVIRONMENT>
+>
+
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" ( "camel" "dingo" ) ) )
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" ( "camel" ) ) )
+( ( "p1" "aardvark" ) ( "p2" "badger" ) ( "opt" () ) )
+
+scheme.schemelistexception: environmentframe.<init> not enough values
+> ( procvariablealt "aardvark" )
+
+
+
+#t
+#f
+#t
+#f
+< leaving schemeinterpreter >

@@ -1,0 +1,8 @@
+< schemeinterpreter testand.scm >
+#t
+#f
+( f g )
+#t
+#f
+#t
+< leaving schemeinterpreter >

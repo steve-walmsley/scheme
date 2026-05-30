@@ -1,0 +1,20 @@
+< schemeinterpreter testdo.scm >
+25
+factorial
+3628800
+fibonacci
+8
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+()
+( 5 15 25 35 45 )
+< leaving schemeinterpreter >

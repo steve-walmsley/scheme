@@ -1,0 +1,10 @@
+< schemeinterpreter testquote.scm >
+abc
+"abc"
+123
+123.456
+( abc "abc" 123 123.456 )
+( abc ( "abc" 123 ) 123.456 )
+a
+( ( quote ( a b c ) ) )
+< leaving schemeinterpreter >

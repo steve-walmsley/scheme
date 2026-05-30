@@ -1,0 +1,105 @@
+< schemeinterpreter testnumbers.scm >
+#t
+#t
+#t
+#t
+#t
+#t
+#t
+#t
+#f
+#f
+#f
+#f
+#t
+"test <"
+#t
+#f
+#f
+"test <="
+#t
+#t
+#f
+"test ="
+#f
+#t
+#f
+"test >="
+#f
+#t
+#t
+"test >"
+#f
+#f
+#t
+"test < order"
+#t
+#f
+#f
+"test <= order"
+#t
+#t
+#f
+"test = order"
+#f
+#t
+#f
+"test >= order"
+#f
+#t
+#t
+"test > order"
+#f
+#f
+#t
+"test zero"
+#t
+#f
+#f
+#t
+#f
+#f
+"test positive"
+#f
+#t
+#f
+#f
+#t
+#f
+"test negative"
+#f
+#f
+#t
+#f
+#f
+#t
+"test even"
+#t
+#f
+#t
+#f
+#t
+"test odd"
+#f
+#t
+#f
+#t
+#f
+"test string->number"
+1234
+-1234
+12.34
+-12.34
+#f
+
+scheme.schemeexception: string->number : argument is not a string
+> ( string->number ( quote aardvaark ) )
+
+100
+256
+100
+"test abs"
+1
+1
+0
+< leaving schemeinterpreter >
