@@ -26,6 +26,12 @@ protected static schemeobject makeAtom( schemetokenizer tokenizer )
     case schemetokenizer.tokenInteger :
       expression = schemeinteger.read( tokenizer );
       break;
+    case schemetokenizer.tokenTrue :
+      expression = schemetrue.trueObject();
+      break;
+    case schemetokenizer.tokenFalse :
+      expression = schemefalse.falseObject();
+      break;
     case schemetokenizer.unrecognizedToken :
       throw new schemeexception( 
         "schemeobject.makeAtom unrecognized token " 

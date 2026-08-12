@@ -18,8 +18,6 @@ protected static schemeenvironment sre = nle.extend();
 protected static schemeenvironment tle = sre.extend();
 
 static {
-  nle.defineVariable( schemefalse.falseSymbol(), schemefalse.falseObject() );
-  nle.defineVariable( schemetrue.trueSymbol(),   schemetrue.trueObject()   );
   nle.defineVariable( 
     schemesymbol.makeSymbol( "let" ), new expandlet()
   );

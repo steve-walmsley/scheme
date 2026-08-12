@@ -20,6 +20,8 @@ public class schemetokenizer {
   public static final int tokenDot           = 11;
   public static final int tokenHashBracket   = 12;
   public static final int tokenHashU8Bracket = 13;
+  public static final int tokenTrue          = 14;
+  public static final int tokenFalse         = 15;
 
   protected static final int stringDelimiter  = '"';
   protected static final int leftParenthesis  = '(';
@@ -102,6 +104,10 @@ public class schemetokenizer {
               case StreamTokenizer.TT_WORD :         
                 if ( tokenizer.sval.equals( "u8" ) && ( tokenizer.nextToken() == leftParenthesis ) ) {
                   tokenType = tokenHashU8Bracket;   
+                } else if ( tokenizer.sval.equals( "t" ) ) {
+                  tokenType = tokenTrue;   
+                } else if ( tokenizer.sval.equals( "f" ) ) {
+                  tokenType = tokenFalse;   
                 } else {
                   tokenType = tokenIdentifier;   
                   identifierValue = String.valueOf( (char)hash ) + tokenizer.sval;
